@@ -1,0 +1,10 @@
+.exercise-video {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 387px;
+  height: 200px;
+  text-decoration: none;
+  margin-left: 0;
+  margin-bottom: 20px;
+}

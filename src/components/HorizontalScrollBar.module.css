@@ -1,0 +1,9 @@
+.scrolling-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+.card {
+  display: inline-block;
+}

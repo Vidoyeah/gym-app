@@ -33,11 +33,7 @@ function HeroBanner() {
       <Typography fontSize="22px" lineHeight="35px" mb={4}>
         Checkout the most effective exercises
       </Typography>
-      <Button
-        variant="contained"
-        style={{ backgroundColor: '#ff2625', padding: '10px' }}
-        href="#exercises"
-      >
+      <Button variant="contained" style={{ backgroundColor: '#ff2625', padding: '10px' }} href="#exercises">
         Explore Exercises
       </Button>
       <Typography
@@ -46,13 +42,9 @@ function HeroBanner() {
         sx={{ opacity: 0.1, display: { lg: 'block', xs: 'none' } }}
         fontSize="200px"
       >
-        Exercise
+        Just Do It
       </Typography>
-      <img
-        src={HeroBannerImage}
-        alt="banner"
-        className={classes['hero-banner-img']}
-      />
+      <img src={HeroBannerImage} alt="banner" className={classes['hero-banner-img']} />
     </Box>
   );
 }

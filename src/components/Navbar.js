@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Stack } from '@mui/system';
 
-import Logo from '../assets/images/Logo.png';
 import classes from './Navbar.module.css';
 
 function Navbar() {
@@ -17,9 +16,6 @@ function Navbar() {
       }}
       px="20px"
     >
-      <Link to="/">
-        <img src={Logo} alt="biceps" className={classes.img} />
-      </Link>
       <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
         <Link to="/" className={classes.link}>
           Home

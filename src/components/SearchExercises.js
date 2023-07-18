@@ -24,10 +24,7 @@ function SearchExercises({ setExercises, bodyPart, setBodyPart }) {
 
   const searchHandler = async () => {
     if (search) {
-      const exercisesData = await fetchData(
-        'https://exercisedb.p.rapidapi.com/exercises',
-        exerciseOptions
-      );
+      const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
       const searchedExercises = exercisesData.filter((exercise) => {
         return (
           exercise.name.toLowerCase().includes(search) ||
@@ -52,7 +49,7 @@ function SearchExercises({ setExercises, bodyPart, setBodyPart }) {
         mb="50px"
         textAlign="center"
       >
-        Awesome Exercises You <br /> Should Know
+        Choose Your's <br /> Tormentor
       </Typography>
       <Box position="relative" mb="72px">
         <TextField
@@ -94,12 +91,7 @@ function SearchExercises({ setExercises, bodyPart, setBodyPart }) {
           p: '20px',
         }}
       >
-        <HorizontalScrollBar
-          data={bodyParts}
-          bodyPart={bodyPart}
-          setBodyPart={setBodyPart}
-          isBodyParts
-        />
+        <HorizontalScrollBar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyParts />
       </Box>
     </Stack>
   );

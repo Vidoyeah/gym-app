@@ -49,7 +49,7 @@ function SearchExercises({ setExercises, bodyPart, setBodyPart }) {
         mb="50px"
         textAlign="center"
       >
-        Choose Your's <br /> Tormentor
+        Choose Your <br /> Tormentor
       </Typography>
       <Box position="relative" mb="72px">
         <TextField
